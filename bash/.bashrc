@@ -11,4 +11,6 @@ alias lsa='ls --color=always -A'
 alias sudo='doas'
 alias sudoedit='doas rnano'
 
-PS1='[\u@\h \W]\$ '
+export PATH=$PATH:$HOME/.local/bin
+
+PS=1'[\u@\h \W]\$ '
