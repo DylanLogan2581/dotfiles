@@ -50,6 +50,9 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+# start passmenu (dmenu password manager)
+bindsym $mod+s exec passmenu
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
