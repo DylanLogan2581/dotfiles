@@ -11,4 +11,6 @@ alias lsa='ls --color=always -A'
 alias sudo='doas'
 alias sudoedit='doas rnano'
 
+alias wget='wget --hsts-file=:$XDG_CACHE_HOME/wget-hsts'
+
 PS=1'[\u@\h \W]\$ '
