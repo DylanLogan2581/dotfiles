@@ -13,4 +13,7 @@ alias sudoedit='doas rnano'
 
 alias wget='wget --hsts-file=:$XDG_CACHE_HOME/wget-hsts'
 
+export GOPATH="$XDG_DATA_HOME"/go
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
+
 PS=1'[\u@\h \W]\$ '
