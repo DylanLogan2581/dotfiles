@@ -13,4 +13,7 @@ alias sudoedit='doas rnano'
 
 alias wget='wget --hsts-file=:$XDG_CACHE_HOME/wget-hsts'
 
+alias newsboat=newsboat --url-file=$XDG_CONFIG_HOME/newsboat/urls --cache-file=$XDG_CACHE_HOME/newsboat/cache.db
+
 PS1='[\u@\h \W]\$ '
+eval "$(starship init bash)"
