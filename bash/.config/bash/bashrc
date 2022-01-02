@@ -5,15 +5,19 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=always'
-alias lsa='ls --color=always -A'
+alias ls="exa --color=always"
+alias lsa="exa --color=always -A"
 
-alias sudo='doas'
-alias sudoedit='doas rnano'
+alias sudo="doas"
+alias sudoedit="doas rnano"
 
-alias wget='wget --hsts-file=:$XDG_CACHE_HOME/wget-hsts'
+alias wget="wget --hsts-file=:$XDG_CACHE_HOME/wget-hsts"
 
-alias newsboat=newsboat --url-file=$XDG_CONFIG_HOME/newsboat/urls --cache-file=$XDG_CACHE_HOME/newsboat/cache.db
+alias newsboat="newsboat --url-file=$XDG_CONFIG_HOME/newsboat/urls --cache-file=$XDG_CACHE_HOME/newsboat/cache.db"
+
+pfetch
+
+umask 077
 
 PS1='[\u@\h \W]\$ '
 eval "$(starship init bash)"
